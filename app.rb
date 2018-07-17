@@ -23,8 +23,8 @@ get '/multipy/:num1/:num2' do
 @num1 = params[:num1].to_i
 @num2 = params[:num2].to_i
 # .to_i stops frome reading as a string
-answer = @num1 * @num2
-answer.to_s
+@answer = @num1 * @num2
+@answer.to_s
 # .to_s retuns to string
 end
 
