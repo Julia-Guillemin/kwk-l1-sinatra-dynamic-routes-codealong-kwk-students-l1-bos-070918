@@ -26,7 +26,9 @@ get '/multipy/:num1/:num2' do
 @answer = @num1 * @num2
 @answer.to_s
 erb :multipy
-# .to_s retuns to string
 end
 
 end
+
+# .to_i stops frome reading as a string
+# .to_s retuns to string
